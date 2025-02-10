@@ -24,7 +24,7 @@ function App() {
           <WhatsAppIcon />
         </a>
       </div>
-      <div className="fixed bottom-0 z-50 md:hidden  bg-green-500 w-full  text-white rounded-md shadow-lg">
+      <div className="fixed bottom-0 z-50 md:hidden  bg-[#EB595F] w-full  text-white rounded-md shadow-lg">
         <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" className="flex  gap-2 items-center justify-center p-3">
           
             <CallIcon />

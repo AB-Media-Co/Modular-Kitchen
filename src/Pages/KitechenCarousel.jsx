@@ -73,7 +73,7 @@ const KitchenCard = ({ kitchen }) => {
             <img src={kitchen.imageUrl} alt={kitchen.title} className="w-full h-40 object-cover" />
             <div className="p-4">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{kitchen.title}</h3>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 flex-col md:flex-row'>
                     <p className="text-gray-600 text-sm mb-4">{kitchen.description}</p>
                     <button className="md:h-[50px] md:w-[300px] rounded-full p-2 text-sm text-red-500 border border-red-500 hover:bg-red-50 hover:border-red-50 hover:text-red-500">
                         GET FREE QUOTE

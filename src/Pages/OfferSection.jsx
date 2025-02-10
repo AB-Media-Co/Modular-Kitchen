@@ -62,7 +62,7 @@ const OfferSection = () => {
     const itemsPerSlide = 3;
 
     return (
-        <div className=" mx-auto px-4 py-12 bg-gray-50">
+        <div className=" mx-auto  py-12 bg-gray-50">
             <div className='content'>
                 <div className="flex justify-between md:items-center flex-col md:flex-row gap-4 mb-12">
                     <h1 className="text-4xl font-bold text-gray-800">What we offer</h1>

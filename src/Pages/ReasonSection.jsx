@@ -24,7 +24,7 @@ const ReasonSection = () => {
 
     return (
         <div className='flex flex-col'>
-            <div className='py-10 md:py-20 flex justify-center gap-10'>
+            <div className='py-10 md:py-20 px-8 md:px-4 flex justify-center gap-10'>
                 {reasons.map((reason,) => (
                     <div key={reason.id} className="flex flex-col items-center">
                         <img src={reason.image} alt={reason.text} className="w-[60px] h-[60px] mb-2" />
