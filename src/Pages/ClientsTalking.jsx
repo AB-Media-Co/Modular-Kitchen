@@ -1,93 +1,78 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
-import Button from '../Common/Button';
 import CommonCarousel from '../Common/CommonCarousel';
 import Heading from '../Common/Heading';
-import ReactModal from 'react-modal';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
+import { CommonSlider } from '../Common/CommonSlider';
 
-const modalStyles = {
-    content: {
-        top: '15%',          // Align to the top
-        left: '15%',         // Align to the left
-        right: '0',        // Align to the right
-        bottom: '0',       // Align to the bottom
-        margin: '0',       // Remove any margins
-        padding: '0',      // Remove any padding
-        backgroundColor: 'rgba(255, 255, 255, 1)',
-        border: 'none',
-        borderRadius: '0', // Remove border radius
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '70vw',   // Take full viewport width
-        height: '70vh',  // Take full viewport height
-    },
-    overlay: {
-        backgroundColor: 'rgba(0, 0, 0, 0.9)', // Darker overlay
-        zIndex: 1000, // Ensure overlay is on top
-    },
-};
+
 
 
 const ClientsTalking = () => {
     const Clients = [
         {
-            title: `“Bhumikar took time out to understand the nuances of exactly what we wanted and our philosophy.” Bijoy and Lisa`,
-            Thumbnail: "https://images.livspace-cdn.com/w:555/h:184/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/client-testimony-1646315297-haa3R/preetika-and-nikhil-desktop-1646377717-qiw2k.jpg",
-            videoUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            testimonial: `“Bhumikar took time out to understand the nuances of exactly what we wanted and our philosophy.”`,
+            name: `Bijoy and Lisa`,
+            image: `data:image/jpeg;base64,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`, // Dummy image
+
         },
         {
-            title: `“Over the weekends, we like to call in our friends, especially now since Bhumikar has done such a fabulous job.”Rohini and Keshav
+            testimonial: `“Over the weekends, we like to call in our friends, especially now since Bhumikar has done such a fabulous job.”`,
+            name: `Rohini and Keshav`,
+            image: `data:image/jpeg;base64,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`, // Dummy image
 
-`,
-            Thumbnail: "https://images.livspace-cdn.com/w:555/h:184/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/client-testimony-1646315297-haa3R/preetika-and-nikhil-desktop-1646377717-qiw2k.jpg",
-            videoUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
         },
         {
-            title: `“I think it’s fair to say that three months ago we got a house from a builder and today we have a home to come back to.”
+            testimonial: `“I think it’s fair to say that three months ago we got a house from a builder and today we have a home to come back to.”`,
+            name: `Preetika and Nikhil`,
+            image: `data:image/jpeg;base64,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`, // Dummy image
 
-Preetika and Nikhil`,
-            Thumbnail: "https://images.livspace-cdn.com/w:555/h:184/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/client-testimony-1646315297-haa3R/preetika-and-nikhil-desktop-1646377717-qiw2k.jpg",
-            videoUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
         },
         {
-            title: `
-“Overall it has been a very pleasant experience. I have no doubt that I would recommend Bhumikar.”
-Rohit and Aanchal
-`,
-            Thumbnail: "https://images.livspace-cdn.com/w:555/h:184/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/client-testimony-1646315297-haa3R/preetika-and-nikhil-desktop-1646377717-qiw2k.jpg",
-            videoUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
-        },
+            testimonial: `“Overall it has been a very pleasant experience. I have no doubt that I would recommend Bhumikar.”`,
+            name: `Rohit and Aanchal`,
+            image: `data:image/jpeg;base64,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`, // Dummy image
 
+        },
+        {
+            testimonial: `“Bhumikar’s attention to detail and commitment to quality have transformed our living space into a dream home.”`,
+            name: `Amit and Anjali`,
+            image: `data:image/jpeg;base64,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`, // Dummy image
+
+        },
+        {
+            testimonial: `“We couldn’t be happier with the results. Bhumikar’s team was professional and efficient throughout the process.”`,
+            name: `Raj and Priya`,
+            image: `data:image/jpeg;base64,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`, // Dummy image
+
+        },
     ];
 
     const itemsPerSlide = 3;
 
 
-    const newsData = [
-        {
-            source: 'The Economic Times',
-            content:
-                'Bhumikar said it crossed the billion-dollar valuation mark after raising $180 million in a late-stage funding round led by KKR & Co...',
-        },
-        {
-            source: 'Mint',
-            content:
-                'Bhumikar has joined the unicorn club after the online home décor startup backed by private equity firm TPG raised $180 mn at a valuation of over $1.2 bn...',
-        },
-        {
-            source: 'Architect and Interiors India',
-            content:
-                'The 23,000 sq-ft Bengaluru centre, designed by FITCH Singapore, combines inspiration, information and technology',
-        },
-        {
-            source: 'The Economic Times',
-            content:
-                'The company has also opened Experience Centres (ECs) spanning 1500 sq ft each in prime locations in all four cities.',
-        },
-    ];
+    // const newsData = [
+    //     {
+    //         source: 'The Economic Times',
+    //         content:
+    //             'Bhumikar said it crossed the billion-dollar valuation mark after raising $180 million in a late-stage funding round led by KKR & Co...',
+    //     },
+    //     {
+    //         source: 'Mint',
+    //         content:
+    //             'Bhumikar has joined the unicorn club after the online home décor startup backed by private equity firm TPG raised $180 mn at a valuation of over $1.2 bn...',
+    //     },
+    //     {
+    //         source: 'Architect and Interiors India',
+    //         content:
+    //             'The 23,000 sq-ft Bengaluru centre, designed by FITCH Singapore, combines inspiration, information and technology',
+    //     },
+    //     {
+    //         source: 'The Economic Times',
+    //         content:
+    //             'The company has also opened Experience Centres (ECs) spanning 1500 sq ft each in prime locations in all four cities.',
+    //     },
+    // ];
 
     return (
         <div className='flex flex-col'>
@@ -100,12 +85,27 @@ Rohit and Aanchal
                 />
 
 
-                {/* Carousel */}
-                <CommonCarousel itemsPerSlide={itemsPerSlide} >
-                    {Clients.map((client, index) => (
-                        <ClientCard key={index} client={client} />
-                    ))}
-                </CommonCarousel>
+
+
+                <div className='block md:hidden'>
+                    <CommonCarousel itemsPerSlide={itemsPerSlide}>
+                        {Clients.map((client, index) => (
+                            <ClientCard key={index} client={client} />
+                        ))}
+                    </CommonCarousel>
+
+                </div>
+
+                <div className='hidden md:block'>
+                    <CommonSlider showItems={3} gap={16}>
+                        {Clients.map((client, index) => (
+                            <ClientCard key={index} client={client} />
+                        ))}
+                    </CommonSlider>
+
+                </div>
+
+
             </div>
 
             <div className='py-10 md:py-20 justify-center bg-gray-50 items-start px-4 md:items-center flex gap-3 flex-col'>
@@ -129,24 +129,7 @@ Rohit and Aanchal
             </div>
 
 
-            <div className='py-10 md:py-20 justify-center content flex gap-3 flex-col'>
 
-                    <h2 className="text-3xl  text-start  font-semibold text-gray-800 mb-8">In the news</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {newsData.map((item, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300"
-                            >
-                                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-2">
-                                    {item.source}
-                                </h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">{item.content}</p>
-                            </div>
-                        ))}
-                    </div>
-                
-            </div>
 
         </div>
     );
@@ -160,63 +143,20 @@ export default ClientsTalking;
 
 
 const ClientCard = ({ client }) => {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
 
     return (
-        <div className="w-full md:w-1/3 flex flex-col bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
-            <div className="relative">
-                <img
-                    src={client.Thumbnail}
-                    alt={client.title}
-                    className="w-full h-50 object-cover cursor-pointer" // Added cursor pointer
-                    onClick={() => setModalIsOpen(true)}
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
-                <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-                    <button
-                        className="play-button cursor-pointer bg-white rounded-full p-2"
-                        onClick={() => setModalIsOpen(true)}
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="black"
-                            width="24"
-                            height="24"
-                        >
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
-                    </button>
+        <div className="w-full p-4">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="p-6">
+                    <img
+                        src={client.image}
+                        alt={client.name}
+                        className="w-20 h-20 rounded-full mx-auto mb-4"
+                    />
+                    <p className="text-gray-700 text-sm">{client.testimonial}</p>
+                    <p className="text-gray-500 text-xs mt-2 text-center">{client.name}</p>
                 </div>
             </div>
-            <p className="px-8 text-center py-4  relative z-10">{client.title}</p>
-
-            <ReactModal
-                isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-                style={modalStyles}
-                contentLabel="Video Testimonial"
-                ariaHideApp={false} // Suppress the warning
-            >
-                <div className="relative w-full h-full">
-                    <button
-                        onClick={() => setModalIsOpen(false)}
-                        className="text-white absolute right-4 top-4 cursor-pointer font-bold z-20 bg-gray-800 rounded-full px-3 py-1" // Added z-20
-                    >
-                        X
-                    </button>
-
-                    <iframe
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/0j6s1XfPA3k?autoplay=1" // Autoplay enabled
-                        title="Rohit and Shveta's Dream Modular Kitchen | Bhumikar Review"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen // Enable full screen
-                    ></iframe>
-                </div>
-            </ReactModal>
         </div>
 
     );

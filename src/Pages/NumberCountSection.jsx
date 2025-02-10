@@ -9,19 +9,19 @@ const NumberCountSection = () => {
           <h2 className="text-3xl font-bold text-center">Let our numbers do the talking!</h2>
           <div className="flex flex-wrap gap-10 w-full justify-around"> {/* Changed to flex-wrap and justify-around */}
             <div className="text-center w-1/2 sm:w-auto"> {/* Adjusted width for responsiveness */}
-              <CountUp end={50000} duration={2} separator="" className="text-4xl sm:text-5xl font-semibold" /> <span className="text-4xl sm:text-5xl font-semibold">+</span> {/* Adjusted text size */}
+              <CountUp end={20000} duration={2} separator="" className="text-4xl sm:text-5xl font-semibold" /> <span className="text-4xl sm:text-5xl font-semibold">+</span> {/* Adjusted text size */}
               <p>#BhumikarHomes</p>
             </div>
             <div className="text-center w-1/2 sm:w-auto"> {/* Adjusted width for responsiveness */}
-              <CountUp end={3500} duration={2} separator="" className="text-4xl sm:text-5xl font-semibold" />  <span className="text-4xl sm:text-5xl font-semibold">+</span> {/* Adjusted text size */}
+              <CountUp end={4500} duration={2} separator="" className="text-4xl sm:text-5xl font-semibold" />  <span className="text-4xl sm:text-5xl font-semibold">+</span> {/* Adjusted text size */}
               <p>designers</p>
             </div>
             <div className="text-center w-1/2 sm:w-auto"> {/* Adjusted width for responsiveness */}
-              <CountUp end={40} duration={2} separator=" " className="text-4xl sm:text-5xl font-semibold" /> {/* Adjusted text size */}
+              <CountUp end={20} duration={2} separator=" " className="text-4xl sm:text-5xl font-semibold" /> {/* Adjusted text size */}
               <p>cities</p>
             </div>
             <div className="text-center w-1/2 sm:w-auto"> {/* Adjusted width for responsiveness */}
-              <CountUp end={4} duration={2} separator=" " className="text-4xl sm:text-5xl font-semibold" /> {/* Adjusted text size */}
+              <CountUp end={3} duration={2} separator=" " className="text-4xl sm:text-5xl font-semibold" /> {/* Adjusted text size */}
               <p>countries</p>
             </div>
           </div>

@@ -10,7 +10,7 @@ import OfferSection from './Pages/OfferSection'
 import PartnersAndMore from './Pages/PartnersAndMore'
 import ReasonSection from './Pages/ReasonSection'
 import TestesToBeBest from './Pages/TestesToBeBest'
-import VideoSection from './Pages/VideoSection'
+// import VideoSection from './Pages/VideoSection'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
 
@@ -39,7 +39,7 @@ function App() {
       <KitchenQuoteForm />
       <ReasonSection />
       <NumberCountSection />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <OfferSection />
       <PartnersAndMore />
       <TestesToBeBest />

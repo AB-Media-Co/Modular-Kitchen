@@ -36,7 +36,7 @@ const PartnersAndMore = () => {
             </div>
     
             <div className="max-w-7xl mx-auto overflow-hidden">
-              <div className="flex animate-marquee">
+              <div className="flex animate-marquee items-center">
                 {duplicatedPartners.map((partner, index) => (
                   <div 
                     key={index}

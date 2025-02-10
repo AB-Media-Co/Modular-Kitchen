@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Button from '../Common/Button';
 import CommonCarousel from '../Common/CommonCarousel';
+import { CommonSlider } from '../Common/CommonSlider';
 import Heading from '../Common/Heading';
 
 const KitchenCarousel = () => {
@@ -46,7 +47,7 @@ const KitchenCarousel = () => {
 
     return (
         <div className="relative py-10 content">
-  
+
             <Heading
                 title="Kitchens for every budget"
                 description="Quality modules, superior finishes, trendy designs for affordable prices."
@@ -54,11 +55,24 @@ const KitchenCarousel = () => {
             />
 
             {/* Carousel */}
-            <CommonCarousel itemsPerSlide={itemsPerSlide}>
-                {kitchens.map((kitchen, index) => (
-                    <KitchenCard key={index} kitchen={kitchen} />
-                ))}
-            </CommonCarousel>
+            <div className='block md:hidden'>
+                <CommonCarousel itemsPerSlide={itemsPerSlide}>
+                    {kitchens.map((kitchen, index) => (
+                        <KitchenCard key={index} kitchen={kitchen} />
+                    ))}
+                </CommonCarousel>
+
+            </div>
+
+            <div className='hidden md:block'>
+                <CommonSlider showItems={3} gap={16}>
+                    {kitchens.map((kitchen, index) => (
+                        <KitchenCard key={index} kitchen={kitchen} />
+                    ))}
+                </CommonSlider>
+
+            </div>
+
         </div>
     );
 };
@@ -69,7 +83,7 @@ export default KitchenCarousel;
 
 const KitchenCard = ({ kitchen }) => {
     return (
-        <div className="w-full md:w-1/3 bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
+        <div className="w-full h-[40vh] my-4 bg-white rounded-lg shadow-md overflow-hidden flex-shrink-0">
             <img src={kitchen.imageUrl} alt={kitchen.title} className="w-full h-40 object-cover" />
             <div className="p-4">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{kitchen.title}</h3>

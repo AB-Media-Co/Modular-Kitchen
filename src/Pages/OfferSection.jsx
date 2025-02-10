@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Wrench, Shield, Lightbulb } from 'lucide-react';
 import Button from '../Common/Button';
 import CommonCarousel from '../Common/CommonCarousel';
+import { CommonSlider } from '../Common/CommonSlider';
 
 const OfferSection = () => {
     const [slideIndex, setSlideIndex] = useState(0);
@@ -71,7 +72,7 @@ const OfferSection = () => {
 
 
 
-                <CommonCarousel itemsPerSlide={itemsPerSlide}>
+                {/* <CommonCarousel itemsPerSlide={itemsPerSlide}>
                     {services.map((service, index) => (
                         <div key={index} className="w-full md:w-1/3 bg-white p-2 md:p-8 rounded-lg shadow-md overflow-hidden flex-shrink-0">
                             <div className="flex items-center gap-3 mb-6">
@@ -92,7 +93,60 @@ const OfferSection = () => {
 
                         </div>
                     ))}
-                </CommonCarousel>
+                </CommonCarousel> */}
+
+
+                <div className='block md:hidden'>
+                    <CommonCarousel itemsPerSlide={itemsPerSlide}>
+                        {services.map((service, index) => (
+                            <div key={index} className="w-full h-[60vh] my-4 bg-white p-2 md:p-8 rounded-lg shadow-md overflow-hidden flex-shrink-0">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <span className="bg-gray-100 p-2 rounded-lg">
+                                        <span className="text-2xl">{service.icon}</span>
+                                    </span>
+                                    <h2 className="text-xl font-semibold text-gray-800">{service.title}</h2>
+                                </div>
+                                <ul className="space-y-4">
+                                    {service.items.map((item, idx) => (
+                                        <li key={idx} className="flex items-start gap-3">
+                                            <span className="w-1 h-1 rounded-full bg-gray-400 mt-2.5"></span>
+                                            <span className="text-gray-600 text-sm leading-relaxed">{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+
+
+                            </div>
+                        ))}
+                    </CommonCarousel>
+
+                </div>
+
+                <div className='hidden md:block'>
+                    <CommonSlider showItems={3} gap={16}>
+                        {services.map((service, index) => (
+                            <div key={index} className="w-full h-[60vh] my-4 bg-white p-2 md:p-8 rounded-lg shadow-md overflow-hidden flex-shrink-0">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <span className="bg-gray-100 p-2 rounded-lg">
+                                        <span className="text-2xl">{service.icon}</span>
+                                    </span>
+                                    <h2 className="text-xl font-semibold text-gray-800">{service.title}</h2>
+                                </div>
+                                <ul className="space-y-4">
+                                    {service.items.map((item, idx) => (
+                                        <li key={idx} className="flex items-start gap-3">
+                                            <span className="w-1 h-1 rounded-full bg-gray-400 mt-2.5"></span>
+                                            <span className="text-gray-600 text-sm leading-relaxed">{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+
+
+                            </div>
+                        ))}
+                    </CommonSlider>
+
+                </div>
 
             </div>
         </div>

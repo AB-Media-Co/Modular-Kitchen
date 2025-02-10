@@ -3,9 +3,9 @@ const KitchenQuoteForm = () => {
     <div className="relative mt-[5rem] md:mt-[4rem] h-[90vh]">
       <div className="absolute inset-0">
         <img
-          src="https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/DALL%C2%B7E-2024-09-10-16.39.59-A-modern-and-contemporary-bedroom-design-featuring-a-comfortable-bed-with-a-stylish-headboard-bedside-tables-with-minimalist-lamps-elegant-curtains-.webp"
+          src="https://passiveprime.com/Bhumikar/wp-content/uploads/2024/10/2149178336.jpg"
           alt="bhhumikar"
-          className="w-full h-[90vh]  object-cover"
+          className="w-full h-[92vh]  object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 h-[50vh] to-white/8"></div>
       </div>

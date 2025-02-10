@@ -16,7 +16,7 @@ const LastBanner = () => {
             <div className="py-8 p-4 pb-16 md:pb-8 text-center md:text-start gap-4 text-white bg-[#41303e] flex-col flex justify-center items-center">
                 <p>
 
-                    © 2022 BHUMIKAR.com All Rights Reserved.
+                    © 2025 BHUMIKAR.com All Rights Reserved.
                 </p>
 
                 ¹For full scope, please visit, www.BHUMIKAR.com/in/service | ²For kitchen, wardrobes and storage | ³In comparison with a branded player and for exact scope | ⁴Booking amount is 5% of the final quote or Rs.25000, whichever is higher
