@@ -12,6 +12,8 @@ import ReasonSection from './Pages/ReasonSection'
 import TestesToBeBest from './Pages/TestesToBeBest'
 import VideoSection from './Pages/VideoSection'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import CallIcon from '@mui/icons-material/Call';
+
 function App() {
 
   return (
@@ -19,10 +21,17 @@ function App() {
       <div className="fixed top-[50%] z-50 right-0  bg-green-500  text-white rounded-md shadow-lg">
         <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3">
           {/* Replace with WhatsApp Icon */}
-          <WhatsAppIcon/>
+          <WhatsAppIcon />
         </a>
       </div>
-   
+      <div className="fixed bottom-0 z-50 md:hidden  bg-green-500 w-full  text-white rounded-md shadow-lg">
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" className="flex  gap-2 items-center justify-center p-3">
+          
+            <CallIcon />
+            CALL NOW
+        </a>
+      </div>
+
       <Navbar />
       <KitchenQuoteForm />
       <ReasonSection />
@@ -32,9 +41,9 @@ function App() {
       <PartnersAndMore />
       <TestesToBeBest />
       <HowItWorks />
-      <KitchenCarousel/>
-      <ClientsTalking/>
-      <LastBanner/>
+      <KitchenCarousel />
+      <ClientsTalking />
+      <LastBanner />
 
 
 
