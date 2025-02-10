@@ -8,7 +8,7 @@ const Heading = ({ title, description, btn }) => {
             </div>
 
             <div>
-                <button className="bg-[#EB595F] cursor-pointer text-white px-8 py-3 rounded-full hover:bg-red-600 transition-colors text-sm font-semibold">
+                <button className="bg-black cursor-pointer text-white px-8 py-3 rounded-full transition-colors text-sm font-semibold">
                     {btn}
                 </button>
             </div>

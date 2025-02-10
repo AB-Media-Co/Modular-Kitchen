@@ -34,12 +34,12 @@ const modalStyles = {
 const ClientsTalking = () => {
     const Clients = [
         {
-            title: `“Livspace took time out to understand the nuances of exactly what we wanted and our philosophy.” Bijoy and Lisa`,
+            title: `“Bhumikar took time out to understand the nuances of exactly what we wanted and our philosophy.” Bijoy and Lisa`,
             Thumbnail: "https://images.livspace-cdn.com/w:555/h:184/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/client-testimony-1646315297-haa3R/preetika-and-nikhil-desktop-1646377717-qiw2k.jpg",
             videoUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
         },
         {
-            title: `“Over the weekends, we like to call in our friends, especially now since Livspace has done such a fabulous job.”Rohini and Keshav
+            title: `“Over the weekends, we like to call in our friends, especially now since Bhumikar has done such a fabulous job.”Rohini and Keshav
 
 `,
             Thumbnail: "https://images.livspace-cdn.com/w:555/h:184/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/client-testimony-1646315297-haa3R/preetika-and-nikhil-desktop-1646377717-qiw2k.jpg",
@@ -54,7 +54,7 @@ Preetika and Nikhil`,
         },
         {
             title: `
-“Overall it has been a very pleasant experience. I have no doubt that I would recommend Livspace.”
+“Overall it has been a very pleasant experience. I have no doubt that I would recommend Bhumikar.”
 Rohit and Aanchal
 `,
             Thumbnail: "https://images.livspace-cdn.com/w:555/h:184/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/client-testimony-1646315297-haa3R/preetika-and-nikhil-desktop-1646377717-qiw2k.jpg",
@@ -70,12 +70,12 @@ Rohit and Aanchal
         {
             source: 'The Economic Times',
             content:
-                'Livspace said it crossed the billion-dollar valuation mark after raising $180 million in a late-stage funding round led by KKR & Co...',
+                'Bhumikar said it crossed the billion-dollar valuation mark after raising $180 million in a late-stage funding round led by KKR & Co...',
         },
         {
             source: 'Mint',
             content:
-                'Livspace has joined the unicorn club after the online home décor startup backed by private equity firm TPG raised $180 mn at a valuation of over $1.2 bn...',
+                'Bhumikar has joined the unicorn club after the online home décor startup backed by private equity firm TPG raised $180 mn at a valuation of over $1.2 bn...',
         },
         {
             source: 'Architect and Interiors India',
@@ -210,7 +210,7 @@ const ClientCard = ({ client }) => {
                         width="100%"
                         height="100%"
                         src="https://www.youtube.com/embed/0j6s1XfPA3k?autoplay=1" // Autoplay enabled
-                        title="Rohit and Shveta's Dream Modular Kitchen | Livspace Review"
+                        title="Rohit and Shveta's Dream Modular Kitchen | Bhumikar Review"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen // Enable full screen

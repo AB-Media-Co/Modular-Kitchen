@@ -8,37 +8,37 @@ const KitchenCarousel = () => {
         {
             title: 'Sleek L-shaped kitchen',
             description: 'Featuring adjoining countertops with corner spaces.',
-            imageUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            imageUrl: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/2149178336.jpg',
         },
         {
             title: 'Premium U-shaped kitchen',
             description: 'Featuring three connected walls of cabinets with an open entrance.',
-            imageUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            imageUrl: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/2149178336.jpg',
         },
         {
             title: 'Elegant island kitchen',
             description: 'Featuring an independent middle counter surrounded by cabinet walls.',
-            imageUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            imageUrl: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/2149178336.jpg',
         },
         {
             title: 'Modern Kitchen',
             description: 'A contemporary kitchen design with clean lines.',
-            imageUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            imageUrl: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/2149178336.jpg',
         },
         {
             title: 'Rustic Kitchen',
             description: 'A warm and inviting kitchen with natural materials.',
-            imageUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            imageUrl: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/2149178336.jpg',
         },
         {
             title: 'Minimalist Kitchen',
             description: 'A simple and functional kitchen design.',
-            imageUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            imageUrl: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/2149178336.jpg',
         },
         {
             title: 'Another Sleek Kitchen',
             description: 'More modern design elements.',
-            imageUrl: 'https://images.livspace-cdn.com/w:600/h:340/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/kitchen-looks-1646376713-fFxLF/l-shaped-desktop-1646376768-UU4KP.jpg',
+            imageUrl: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2024/09/2149178336.jpg',
         },
     ];
 

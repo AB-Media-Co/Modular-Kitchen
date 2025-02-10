@@ -19,17 +19,17 @@ const TestesToBeBest = () => {
         'Shutter Cyclic Test': {
             title: 'Shutter Cyclic Test',
             description: 'Details about the shutter cyclic test.',
-            videoUrl: 'https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/design-to-installtion-1616405714-HYWaQ/tested-best-1616487276-wIcKF/drawer-testing-1624542511-bJpFw/drawer-cyclic-v3-d-1624542538-4AJQx.mp4',
+            videoUrl: 'https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/design-to-installtion-1616405714-HYWaQ/tested-best-1616487276-wIcKF/shutter-cyclic-v2-d-1616758759-JRHU0.mp4',
         },
         'Vertical Force Test': {
             title: 'Vertical Force Test',
             description: 'Information on the vertical force test.',
-            videoUrl: 'https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/design-to-installtion-1616405714-HYWaQ/tested-best-1616487276-wIcKF/drawer-testing-1624542511-bJpFw/drawer-cyclic-v3-d-1624542538-4AJQx.mp4',
+            videoUrl: 'https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/design-to-installtion-1616405714-HYWaQ/tested-best-1616487276-wIcKF/vertical-force-v2-d-1616758760-zr4a8.mp4',
         },
         'Shelf Load Test': {
             title: 'Shelf Load Test',
             description: 'Details about the shelf load test.',
-            videoUrl: 'https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/design-to-installtion-1616405714-HYWaQ/tested-best-1616487276-wIcKF/drawer-testing-1624542511-bJpFw/drawer-cyclic-v3-d-1624542538-4AJQx.mp4',
+            videoUrl: 'https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/design-to-installtion-1616405714-HYWaQ/tested-best-1616487276-wIcKF/shelf-load-v2-d-1616758757-knkNo.mp4',
         },
     };
 
@@ -53,7 +53,7 @@ const TestesToBeBest = () => {
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={`whitespace-nowrap cursor-pointer py-4 px-1 border-b-2 font-medium text-md ${activeTab === tab
-                                        ? 'border-[#EB595F] text-[#EB595F]'
+                                        ? 'border-black text-black'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                     } focus:outline-none`}
                             >

@@ -59,7 +59,7 @@ const VideoSection = () => {
 
                 <div className="mt-4 text-center justify-center items-center flex flex-col w-full md:w-1/2"> {/* Adjusted width */}
                     <p className="text-lg italic">
-                        “Hats off to the entire team at Livspace. They finished the project ahead of time. They said 45 days but finished it much earlier.”
+                        “Hats off to the entire team at BHUMIKAR. They finished the project ahead of time. They said 45 days but finished it much earlier.”
                     </p>
                     <p className="text-base font-bold mt-2">Rohit and Shveta</p>
                 </div>
@@ -79,7 +79,7 @@ const VideoSection = () => {
                         height="auto"         // Adjust height automatically
                         style={{ aspectRatio: '16 / 9' }} // Maintain 16:9 aspect ratio
                         src="https://www.youtube.com/embed/0j6s1XfPA3k"
-                        title="Rohit and Shveta&#39;s Dream Modular Kitchen | Livspace Review"
+                        title="Rohit and Shveta&#39;s Dream Modular Kitchen | BHUMIKAR Review"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin"

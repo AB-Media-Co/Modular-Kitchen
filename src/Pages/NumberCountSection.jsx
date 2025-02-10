@@ -10,7 +10,7 @@ const NumberCountSection = () => {
           <div className="flex flex-wrap gap-10 w-full justify-around"> {/* Changed to flex-wrap and justify-around */}
             <div className="text-center w-1/2 sm:w-auto"> {/* Adjusted width for responsiveness */}
               <CountUp end={50000} duration={2} separator="" className="text-4xl sm:text-5xl font-semibold" /> <span className="text-4xl sm:text-5xl font-semibold">+</span> {/* Adjusted text size */}
-              <p>#LivspaceHomes</p>
+              <p>#BhumikarHomes</p>
             </div>
             <div className="text-center w-1/2 sm:w-auto"> {/* Adjusted width for responsiveness */}
               <CountUp end={3500} duration={2} separator="" className="text-4xl sm:text-5xl font-semibold" />  <span className="text-4xl sm:text-5xl font-semibold">+</span> {/* Adjusted text size */}

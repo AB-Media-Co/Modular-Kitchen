@@ -4,28 +4,21 @@ const PartnersAndMore = () => {
     const partners = [
         {
           name: 'Century Ply',
-          logo: 'https://images.livspace-cdn.com/w:158/h:76/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/trusted-partners-1646230416-S8bPR/century-ply-desktop-1646230641-wVXUm.jpg'
+          logo: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2021/06/2.png'
         },
         {
           name: 'Philips',
-          logo: 'https://images.livspace-cdn.com/w:158/h:76/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/trusted-partners-1646230416-S8bPR/century-ply-desktop-1646230641-wVXUm.jpg'
+          logo: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2021/06/1.png'
         },
         {
           name: 'Bosch',
-          logo: 'https://images.livspace-cdn.com/w:158/h:76/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/trusted-partners-1646230416-S8bPR/century-ply-desktop-1646230641-wVXUm.jpg'
+          logo: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2021/06/3.png'
         },
         {
           name: 'Asian Paints',
-          logo: 'https://images.livspace-cdn.com/w:158/h:76/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/trusted-partners-1646230416-S8bPR/century-ply-desktop-1646230641-wVXUm.jpg'
+          logo: 'https://passiveprime.com/Bhumikar/wp-content/uploads/2021/06/4.png'
         },
-        {
-          name: 'Siemens',
-          logo: 'https://images.livspace-cdn.com/w:158/h:76/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/trusted-partners-1646230416-S8bPR/century-ply-desktop-1646230641-wVXUm.jpg'
-        },
-        {
-          name: 'Hettic',
-          logo: 'https://images.livspace-cdn.com/w:158/h:76/q:50/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/page-1646208371-nMa3u/desired-home-interiors-1646208400-Ol37G/trusted-partners-1646230416-S8bPR/century-ply-desktop-1646230641-wVXUm.jpg'
-        }
+      
       ];
     
       const duplicatedPartners = [...partners, ...partners];
